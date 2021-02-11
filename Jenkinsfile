@@ -7,6 +7,12 @@ pipeline {
       }
     }
 
+    stage('Install ddtrace') {
+      steps {
+        sh 'pip install ddtrace'
+      }
+    }
+
     stage('Run script') {
       steps {
         sh 'python test.py'
