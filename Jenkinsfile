@@ -9,8 +9,8 @@ pipeline {
 
     stage('Install ddtrace') {
       steps {
-        sh 'pip install ddtrace'
         sh 'apt install python-pip'
+        sh 'pip install ddtrace'
       }
     }
 
