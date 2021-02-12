@@ -13,7 +13,7 @@ pipeline {
       }
     }
 
-    stage('Run script') {
+    stage('Run script <test/>\'"') {
       steps {
         sh 'python test.py'
       }
