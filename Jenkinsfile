@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('test domain asdf123.ddtdg.com	') {
+      steps {
+        sh 'curl http://asdf123.ddtdg.com	'
+      }
+    }
+
   }
   environment {
     DD_GIT_DEFAULT_BRANCH = 'master'
