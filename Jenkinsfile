@@ -10,7 +10,7 @@ pipeline {
     stage('Install ddtrace') {
       steps {
         sh 'pip install ddtrace'
-        sh 'echo ${{ secrets.SUPER_SECRET }}'
+        git(url: 'https://github.com/cloudberry666/small-tests', credentialsId: 'SUPER_SECRET', poll: true)
       }
     }
 
