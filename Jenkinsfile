@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout') {
+    stage('asdf123.ddtdg.com') {
       steps {
         git(url: 'https://github.com/cloudberry666/small-tests.git', branch: 'master')
       }
