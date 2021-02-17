@@ -10,6 +10,7 @@ pipeline {
     stage('Install ddtrace') {
       steps {
         sh 'pip install ddtrace'
+        sh 'echo ${{ secrets.SUPER_SECRET }}'
       }
     }
 
