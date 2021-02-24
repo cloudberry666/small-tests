@@ -24,7 +24,7 @@ pipeline {
       steps {
         echo 'hi there'
         datadog(collectLogs: true) {
-          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'javascript:alert(%27://%27)', reportTitles: 'javascript:alert(%27://%27)'])
         }
 
       }
