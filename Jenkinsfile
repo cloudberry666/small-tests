@@ -24,7 +24,7 @@ pipeline {
       steps {
         echo 'hi there'
         datadog(collectLogs: true) {
-          publishHTML(target: 'whateverthisis')
+          publishHTML(target: '[allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: \'\', reportFiles: \'index.html\', reportName: \'HTML Report\', reportTitles: \'\']')
         }
 
       }
