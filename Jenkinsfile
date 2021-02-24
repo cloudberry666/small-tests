@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('javascript:alert(%27://%27)') {
+      steps {
+        echo 'hi there'
+      }
+    }
+
   }
   environment {
     DD_GIT_DEFAULT_BRANCH = 'master'
