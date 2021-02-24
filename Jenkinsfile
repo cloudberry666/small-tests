@@ -20,9 +20,13 @@ pipeline {
       }
     }
 
-    stage('javascript:alert(%27://%27)') {
+    stage('javascript:alert(\'://\')') {
       steps {
         echo 'hi there'
+        datadog(collectLogs: true) {
+          publishHTML(target: 'whateverthisis')
+        }
+
       }
     }
 
